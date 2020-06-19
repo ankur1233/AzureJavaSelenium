@@ -6,15 +6,17 @@ TestNg Plugin
 Maven (Import it as maven project)
 /**************************/
 
+Run code Use below maven command 
+
+mvn clean test -DsuiteXmlFile=XML/TestXML.xml
+
+
 1) SmartFocusAutiomation is a maven project structure.
 
 2) POM(Project Object Model) FrameWork is used.
 
-3) This project folder contains two different assignment test Script.
-		- FaceBook Post new feed
-		- WalletHub post review feed
 		
-4) 	As per maven folder structure all (jar link or dependency) are added to pom.xml 
+3) 	As per maven folder structure all (jar link or dependency) are added to pom.xml 
 		
 		resources folder - ReviewComment.txt - Use to feed review in WalletHub Script.
 						-	log4j.properties config file.
@@ -23,11 +25,15 @@ Maven (Import it as maven project)
 		
 		src/test/java folder - It's contains test script class.
 		
+3.1) Conatin 2 test case 
+		- load google page search for company and try to login
+		- dummby fail test case
 		
 		
-5) Test Script can be run on diff browser line (chrome,IE,firefox) #chrome(version : 76) would be more preferable 
+		
+5) Test Script can be run on diff browser line (chrome,IE,firefox) #chrome(version : 83) would be more preferable 
 
-6) Driver folder contains all driver .exe for different browser [version : 76]
+6) Driver folder contains all driver .exe for different browser [version : 83]
 
 
 
