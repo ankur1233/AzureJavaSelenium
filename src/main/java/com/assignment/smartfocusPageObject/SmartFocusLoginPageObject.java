@@ -1,0 +1,35 @@
+package com.assignment.smartfocusPageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.assignment.smartfocusComponent.BaseClass;
+
+public class SmartFocusLoginPageObject extends BaseClass {
+
+	@FindBy(id="IDToken1")
+	 public WebElement userNameField;
+	
+	@FindBy(id="IDToken2")
+	public WebElement passwordField;
+	
+	@FindBy(id="loginButton")
+	public WebElement loginButton;
+	
+	@FindBy(css=".containerContent h2")
+	public WebElement Errorvalidation;
+	
+	
+	
+	
+		
+	public SmartFocusLoginPageObject(WebDriver driver) {
+        this.driver = driver;     
+        PageFactory.initElements(driver, this);
+}
+
+	
+	
+}
